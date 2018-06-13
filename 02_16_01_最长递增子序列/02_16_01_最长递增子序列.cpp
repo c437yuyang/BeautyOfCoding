@@ -91,7 +91,9 @@ int LIS3(const std::vector<int>&arr)
 	return curMaxLen;
 }
 
+
 //改成二分搜索，找到插入位置
+int binarySearch(const std::vector<int>& arr, int val);
 int LIS4(const std::vector<int>&arr)
 {
 	//(长度为i的最长递增子序列的最大值)的最小值
@@ -104,9 +106,37 @@ int LIS4(const std::vector<int>&arr)
 		else
 		{
 			*std::lower_bound(maxLenMinVal.begin() + 1, maxLenMinVal.begin() + curMaxLen + 1, arr[i]) = arr[i];
+			//binarySearch(arr, arr[i]);
 		}
 	}
 	return curMaxLen;
+}
+
+//找到应该被替换的位置
+int binarySearch(const std::vector<int>& arr, int val) 
+{
+	if (arr.size() == 1)
+	{
+		if (arr[0] >= val)
+			return 0;
+		if (arr[0] < val)
+			return 1;
+	}
+	int L = 0, R = arr.size() - 1;
+	int mid = -1;
+	while (L <= R) 
+	{
+		mid = L + ((R - L) >> 1);
+		if (arr[mid] == val)
+			return mid;
+		else if (arr[mid] > val)
+			R = mid - 1;
+		else
+			L = mid + 1;
+	}
+	if (arr[mid] >= val)
+		return mid;
+	else return mid + 1;
 }
 
 
