@@ -53,6 +53,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_14_02_头尾相连的子
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_15_01_子矩阵的最大和", "02_15_01_子矩阵的最大和\02_15_01_子矩阵的最大和.vcxproj", "{C0A71942-1189-4B07-BF23-156D89E18BFC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_16_01_最长递增子序列", "02_16_01_最长递增子序列\02_16_01_最长递增子序列.vcxproj", "{E3BD36DD-73DF-4E89-BE07-0D02D575623A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -261,6 +263,14 @@ Global
 		{C0A71942-1189-4B07-BF23-156D89E18BFC}.Release|x64.Build.0 = Release|x64
 		{C0A71942-1189-4B07-BF23-156D89E18BFC}.Release|x86.ActiveCfg = Release|Win32
 		{C0A71942-1189-4B07-BF23-156D89E18BFC}.Release|x86.Build.0 = Release|Win32
+		{E3BD36DD-73DF-4E89-BE07-0D02D575623A}.Debug|x64.ActiveCfg = Debug|x64
+		{E3BD36DD-73DF-4E89-BE07-0D02D575623A}.Debug|x64.Build.0 = Debug|x64
+		{E3BD36DD-73DF-4E89-BE07-0D02D575623A}.Debug|x86.ActiveCfg = Debug|Win32
+		{E3BD36DD-73DF-4E89-BE07-0D02D575623A}.Debug|x86.Build.0 = Debug|Win32
+		{E3BD36DD-73DF-4E89-BE07-0D02D575623A}.Release|x64.ActiveCfg = Release|x64
+		{E3BD36DD-73DF-4E89-BE07-0D02D575623A}.Release|x64.Build.0 = Release|x64
+		{E3BD36DD-73DF-4E89-BE07-0D02D575623A}.Release|x86.ActiveCfg = Release|Win32
+		{E3BD36DD-73DF-4E89-BE07-0D02D575623A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
