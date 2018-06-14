@@ -4,7 +4,7 @@
 #include <string>
 #include <climits>
 #include <cassert>
-#include <YXPCommon.h>
+#include <YXPUtility>
 
 //µÝ¹é°æ±¾:
 int LISProcess(int *arr, int j);

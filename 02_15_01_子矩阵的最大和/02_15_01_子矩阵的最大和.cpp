@@ -4,13 +4,13 @@
 #include <string>
 #include <climits>
 #include <cassert>
-#include <YXPCommon.h>
+#include <YXPUtility>
 
 //解法1:枚举所有子矩阵 O(N^2*M^2*M*N)
-int max(int x, int y)
-{
-	return (x > y) ? x : y;  // 用于比较x和y的大小，返回x和y中的较大者
-}
+//int max(int x, int y)
+//{
+//	return (x > y) ? x : y;  // 用于比较x和y的大小，返回x和y中的较大者
+//}
 
 // @parameters
 // A，二维数组
@@ -37,7 +37,7 @@ int MaxSum1(int* A, int rows, int cols)
 		for (int i_max = i_min; i_max < rows; i_max++)
 			for (int j_min = 0; j_min < cols; j_min++)
 				for (int j_max = j_min; j_max < cols; j_max++)
-					maximum = max(maximum, Sum(A, rows, cols, i_min, i_max, j_min,
+					maximum = std::max(maximum, Sum(A, rows, cols, i_min, i_max, j_min,
 						j_max));
 	return maximum;
 }
@@ -129,7 +129,7 @@ int main()
 		int * mat = new int[rows*cols];
 		yxp_utility::RandomHelper::randomMatrix(mat, rows, cols, min, max);
 		auto res = MaxSum1(mat, rows, cols);
-		auto res2 = MaxSum2(mat, rows, cols);
+		//auto res2 = MaxSum2(mat, rows, cols);
 		auto res3 = MaxSum3(mat, rows, cols);
 		//std::cout << res << std::endl;
 		assert(res == res3);

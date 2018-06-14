@@ -4,7 +4,7 @@
 #include <string>
 #include <climits>
 #include <cassert>
-#include <YXPCommon.h>
+#include <YXPUtility>
 
 //解法1:暴力遍历O(N^3)
 int MaxSum1(int *arr, int n)

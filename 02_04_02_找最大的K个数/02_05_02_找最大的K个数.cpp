@@ -4,7 +4,7 @@
 #include <string>
 #include <climits>
 #include <cassert>
-#include <YXPCommon.h>
+#include <YXPUtility>
 
 typedef int number;
 
